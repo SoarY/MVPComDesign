@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_area_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_area_code"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_34" />
+
+        <include
+            layout="@layout/inc_line_v"
+            android:layout_width="@dimen/dp_2"
+            android:layout_height="@dimen/dp_38"
+            android:layout_marginLeft="@dimen/dp_32" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_32"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/sign_input_phone_num"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLength="11"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/sign_color_hint"
+            android:textSize="@dimen/dp_34" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/inc_line_h"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_30" />
+
+</LinearLayout>

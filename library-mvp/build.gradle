@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion build_android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion build_android.minSdkVersion
+        targetSdkVersion build_android.targetSdkVersion
+        versionCode build_android.versionCode
+        versionName build_android.versionName
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //统一资源前缀，规范资源引用
+    resourcePrefix "mvp_"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+
+    api authority.androidx
+    //ButterKnife
+    api thirdLibs.ButterKnife
+    //Rxlifecycle2
+    api thirdLibs.Rxlifecycle2
+
+}

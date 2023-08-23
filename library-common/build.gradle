@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion build_android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion build_android.minSdkVersion
+        targetSdkVersion build_android.targetSdkVersion
+        versionCode build_android.versionCode
+        versionName build_android.versionName
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    //公用的support相关库在base中依赖
+    api authority.androidx
+    //阿里路由框架
+    api thirdLibs.arouter_api
+}

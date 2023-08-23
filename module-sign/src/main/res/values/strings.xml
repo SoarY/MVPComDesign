@@ -1,0 +1,29 @@
+<resources>
+    <string name="sign_name">登录组件</string>
+
+    <string name="sign_area_code">+86</string>
+    <string name="sign_input_phone_num">请输入手机号</string>
+    <string name="sign_login">登录</string>
+    <string name="sign_input_pass">请输入密码</string>
+    <string name="sign_change_pswd">设置新密码(6-16位)</string>
+    <string name="sign_forgot_password">忘记密码</string>
+    <string name="sign_logon_validate">登录验证</string>
+    <string name="sign_verification_code_sended">验证码发送成功，请注意查收</string>
+    <string name="sign_change_password_success">修改密码成功</string>
+    <string name="sign_register">设置初始密码</string>
+    <string name="sign_register_faq">初始密码用于陕西微政务登录</string>
+    <string name="sign_complete">完成</string>
+    <string name="sign_complete_password">初始密码</string>
+    <string name="sign_complete_password_faq">初始密码用于陕西微政务登录</string>
+    <string name="sign_input_name">请输入昵称</string>
+    <string name="sign_input_verify_code">请输入验证码</string>
+    <string name="sign_get_verify_code">获取验证码</string>
+    <string name="sign_logon_validate_faq">我们会发送验证码到 %s 验证身份</string>
+    <string name="sign_forget_pswd_faq">我们会发送验证码验证身份</string>
+
+    <!--Exception Toast-->
+    <string name="sign_ex_user_error">登录异常</string>
+    <string name="sign_ex_user_registered">用户已注册,请直接登录</string>
+    <string name="sign_ex_user_have_been_disabled">账号已经被禁用</string>
+    <string name="sign_ex_user_overdue">账号已过期，请重新注册</string>
+</resources>

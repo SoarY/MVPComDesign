@@ -1,0 +1,1 @@
+include ':app', ':library-common', ':library-commonres',':library-commonui',':library-mvp',':library-network',':module-sign'

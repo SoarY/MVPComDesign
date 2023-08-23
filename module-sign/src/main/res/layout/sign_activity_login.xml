@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_50"
+    android:paddingRight="@dimen/dp_50">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_145"
+        android:src="@mipmap/sign_ic_logo_login" />
+
+    <include
+        layout="@layout/sign_inc_login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_145" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_80"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/sign_input_pass"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="11"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/sign_color_hint"
+            android:textSize="@dimen/sp_34" />
+
+        <ImageView
+            android:id="@+id/iv_pswd_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sign_ic_delete_nor" />
+
+        <ImageView
+            android:id="@+id/iv_pswd_eye"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sign_selector_pwd_eye" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/inc_line_h"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_30" />
+
+
+    <TextView
+        android:id="@+id/tv_forgot_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/dp_36"
+        android:text="@string/sign_forgot_password"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dp_28" />
+
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_96"
+        android:layout_marginTop="@dimen/dp_72"
+        android:background="@drawable/sign_btn_press"
+        android:gravity="center"
+        android:text="@string/sign_login"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp_34" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_60"
+        android:text="@string/sign_register"
+        android:textColor="@color/color_main"
+        android:textSize="@dimen/sp_28" />
+
+</LinearLayout>

@@ -23,5 +23,5 @@ Apache 2.0. See the LICENSE file for details.
 [3]:https://img.shields.io/badge/API-24%2B-red.svg?style=flat
 [4]:https://android-arsenal.com/api?level=24
 
-[5]:https://github.com/SoarY/MVVMComponentization
+[5]:https://github.com/SoarY/MVVMComDesignKt
 [6]:https://github.com/SoarY/MVVMComDesign
